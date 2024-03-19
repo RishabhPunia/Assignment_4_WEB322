@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The lego collection</title>
+</head>
+<body>
+   
+  <%- include('partials/navbar') %>
+    <!-- Hero section -->
+    <div class="hero min-h-svh" style="background-image: url('your-background-image-url');">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <p>Get the detailed information about Lego sets.</p>
+          <a href="/lego/sets" class="btn btn-primary">Discover More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="https://cdn.rebrickable.com/media/sets/10267-1.jpg" alt="Gingerbread House" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Gingerbread House</h2>
+            <p>Snow blower designed by Jamie Berard. Remainder of set designed by Tiago Catarino.</p>
+            <div class="card-actions justify-end">
+              <a href="/lego/sets/10267-1" class="btn btn-primary">VIEW</a>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="https://cdn.rebrickable.com/media/sets/002-1.jpg" alt="4.5V Samsonite Gears Motor Se" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">4.5V Samsonite Gears Motor Set</h2>
+            <p>This set was released in America (USA/CAN) by Samsonite in 1965. It was never released in Europe</p>
+            <div class="card-actions justify-end">
+              <a href="/lego/sets/002-1" class="btn btn-primary">VIEW</a>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="https://cdn.rebrickable.com/media/sets/1054-1.jpg" alt="Stena Line Ferry" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Stena Line Ferry</h2>
+            <p>Available for purchase only aboard Stena Line ferries used for cross-English Channel routes</p>
+            <div class="card-actions justify-end">
+              <a href="/lego/sets/1054-1" class="btn btn-primary">VIEW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+</body>
+</html>
