@@ -6,64 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lego Collection</title>
   <link rel="stylesheet" href="/css/main.css" />
+
+  <style>
+    .card {
+        height: 100%;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.1); ;
+    }
+    
+    .card img {
+        height: 200px;
+        object-fit: cover; 
+    }
+
+  </style>
 </head>
 
 <body tabindex="-1">
-  <%- include('partials/navbar', {page: '/'}) %>
-  
+    <%- include('partials/navbar', {page:'/home'}) %>
+
   <div class="container mx-auto">
-    <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content text-center">
-          <div class="max-w-md">
-            <h1 class="text-5xl font-bold">Hello, Welcome To My Lego Collection!</h1>
-            <p class="py-6">We have a diverse collection of sets from Lego's history. From Medieval to Space, we have everything in between and more.</p>
-            <a href="/lego/sets">
-                <button class="btn btn-primary">Show me</button>
-            </a>
+      <div class="hero bg-base-200 rounded-lg p-6">
+          <div class="hero-content text-center ">
+              <div class="max-w-lg">
+                  <h1 class="text-5xl font-bold">Explore Lego Collection</h1>
+      
+                  <p class="py-6">Welcome to our Lego Collection website! Dive into the world of Lego with our extensive collection of sets. Whether you're a collector or just starting out, there's something for everyone here.</p>
+              
+                  <a href="/lego/sets" class="btn btn-primary">Explore Sets</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+
+          <div class="card bg-base-100 shadow-xl">
+              <figure>
+              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/miami-1.jpg" alt="MIAMI-1">
+              </figure>
+              <div class="card-body">
+              <h2 class="card-title">Art Deco Hotel</h2>
+              <p>This set was released in 2010. Inventory were 142 parts, and the theme is LEGO Brand Store.</p>
+                  <div class="card-actions justify-end">
+                          <a href="/lego/sets/MIAMI-1" class="btn btn-primary">View</a>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+      <div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full" src="https://cdn.rebrickable.com/media/sets/microrooster-1.jpg" alt="MICROROOSTER-1">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Micro Rooster</h2>
+            <p>This set was released in 2017. Inventory was 8 parts and theme was seasonal.</p>
+            <div class="card-actions justify-end">
+                <a href="/lego/sets/MICROROOSTER-1" class="btn btn-primary">View</a>
+            </div>
           </div>
         </div>
       </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
-          <div class = "card bg-base-100 shadow-xl">
-            <figure>
-              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/02-2.jpg" alt="Digger Bucket Assembly" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Digger Bucket Assembly</h2>
-              <p>This set is similar to 705-4, 24-2, and 1124-1, a small digger!</p>
+      <div>
+      <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full " src="https://cdn.rebrickable.com/media/sets/midautumnrabbit-1-1.jpg" alt="MIDAUTUMNRABBIT-1-1">
+          </figure>
+          <div class="card-body">
+          <h2 class="card-title">Mid Autumn Rabbit</h2>
+          <p>This set was realesed in 2019. Inventory was 40 parts and the theme was LEGO Brand Store.</p>
               <div class="card-actions justify-end">
-                <a href="/lego/sets/02-2"><button class="btn btn-primary">See More</button></a>
+                  <a href="/lego/sets/MIDAUTUMNRABBIT-1-1" class="btn btn-primary">View</a>
               </div>
-            </div>
           </div>
-          <div class = "card bg-base-100 shadow-xl">
-            <figure>
-              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/010423-1.jpg" alt="The Majestic Horse" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">The Majestic Horse</h2>
-              <p>Designed by previous 2017 Lego Masters UK winners Nathan Dias and Steve Guinness.
-                Given to select members of the Recognised Lego Fan Media group for an April fools 
-                prank in 2023, only around 10 are known to exist.</p>
-              <div class="card-actions justify-end">
-                <a href="/lego/sets/010423-1"><button class="btn btn-primary">See More</button></a>
-              </div>
-            </div>
-          </div>
-          <div class = "card bg-base-100 shadow-xl">
-            <figure>
-              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/002253963-1.jpg" alt="Legend of Chima: Corbeaux et Gorilles" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Legend of Chima: Corbeaux et Gorilles</h2>
-              <p>Title translates as: Ravens and Gorillas</p>
-              <div class="card-actions justify-end">
-                <a href="/lego/sets/002253963-1"><button class="btn btn-primary">See More</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+
+      </div>
   </div>
+  
 </body>
+
 </html>

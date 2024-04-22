@@ -4,34 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>Lego Collection</title>
   <link rel="stylesheet" href="/css/main.css" />
+
 </head>
 
 <body tabindex="-1">
-  <%- include('partials/navbar', {page: '/about'}) %>
-  
+    <%- include('partials/navbar', {page: '/about'}) %>
+
   <div class="container mx-auto">
-    <div class="hero min-h-screen bg-base-200">
-      <div class="max-w-md">
-        <h1 class="text-5xl font-bold">About</h1>
-        <p class="py-6">
-          All about me! LEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGO
-        </p>
+      <div class="hero bg-base-200 rounded-lg p-6">
+          <div class="hero-content text-center ">
+              <div class="max-w-md">
+                  <h1 class="text-5xl font-bold">About</h1>
+                  <p class="py-6">"All about me! LEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGOLEGO"</p>
+              </div>
+          </div>
       </div>
-    </div>
+  </div>
 
-    <div class="grid md:grid-cols-2 gap-4">
-        <figure>
-          <img class="w-full" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fexternal-preview.redd.it%2FQBJniN11RHsM3K4WvdZJBsEAd5sazYIKOrqTw6dye_c.jpg%3Fauto%3Dwebp%26s%3Dc74c4d08769d2d14ebee21f51617bffe5b3faa98&f=1&nofb=1&ipt=7e9d0ae19cd1597d580f3e2cbc8a3b814d8a6bc668ca581cb6a6719807a3ef61&ipo=images">
-        </figure>
-        <p>
-          Hi! I'm Rishabh, I enjoy programming, video games, 
-          skiing, biking, music, and a whole bunch of other things.
+  <br>
 
-          I'm currently taking WEB322!
-        </p>
-    </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
+          <div class="p-4">
+              <img src="/mypic.jpg" alt="My image" class="w-full rounded-lg shadow-md">
+          </div>
+
+          <div class="p-4">
+              <h2 class="text-xl font-bold mb-4">About Me</h2>
+              <p class="text-gray-400">"Hi! I'm Rishabh, I enjoy programming, video games, 
+                skiing, biking, music, and a whole bunch of other things.
+      
+                I'm currently taking WEB322!"</p>
+              <br>
+              
+          </div>
+      </div>
   </div>
 </body>
+
 </html>
